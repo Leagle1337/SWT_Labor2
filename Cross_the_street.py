@@ -19,7 +19,7 @@ street_surf.fill('blue')
 # pygame.image.load('bilder/Car1.png').convert_alpha()
 car_surf = pygame.Surface((50, 50))
 car_x_pos = 950
-text_surf = font.render('Was geht?', False, 'black')
+text_surf = font.render('Cross the street', False, 'black')
 straßen = 1000
 while True:
     for event in pygame.event.get():
@@ -29,7 +29,7 @@ while True:
 
     screen.blit(ground_surf, (0, 0))
     screen.blit(player_surf, (500, 950))
-    screen.blit(text_surf, (500, 200))
+    screen.blit(text_surf, (450, 100))
     for x in range(0, 1000, 166):
         screen.blit(street_surf, (0, x))
 
